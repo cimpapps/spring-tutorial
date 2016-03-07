@@ -1,0 +1,7 @@
+package com.cimpapps.hello;
+
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+public class InitHelloWorld implements BeanPostProcessor {
+
+}

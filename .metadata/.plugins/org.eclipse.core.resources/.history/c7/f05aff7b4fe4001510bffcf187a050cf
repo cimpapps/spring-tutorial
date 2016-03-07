@@ -1,0 +1,11 @@
+package com.cimpapps.hello;
+
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class HelloWorld {
+	
+	private String message1;
+	private String message2;
+	
+}

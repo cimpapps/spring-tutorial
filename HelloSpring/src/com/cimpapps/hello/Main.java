@@ -9,8 +9,12 @@ public class Main {
 		
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 		
-		HelloWorld singletonObj1 = (HelloWorld) context.getBean("helloWorld");
-		System.out.println(singletonObj1.getMessage());
+		Friendly helloWorld = (Friendly) context.getBean("helloWorld");
+		helloWorld.sayHello();
+		
+		Friendly helloRomania = (Friendly) context.getBean("helloRomania");
+		helloRomania.sayHello();
+		
 		
 		context.registerShutdownHook();
 	

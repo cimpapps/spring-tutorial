@@ -1,0 +1,16 @@
+package com.cimpapps.hello;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+			
+		HelloWorld singletonObj1 = (HelloWorld) context.getBean("helloWorld");
+		HelloWorld singletonObj2 = (HelloWorld) context.getBean("helloWorld");
+		System.out.println(singletonObj1.getMessage());
+	}
+	
+}

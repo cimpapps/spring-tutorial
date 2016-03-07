@@ -2,7 +2,7 @@ package com.cimpapps.hello;
 
 import org.springframework.beans.factory.InitializingBean;
 
-public class HelloWorld implements InitializingBean {
+public class HelloWorld {
 	String message;
 	
 	public String getMessage() {
@@ -13,13 +13,9 @@ public class HelloWorld implements InitializingBean {
 		this.message = message;
 	}
 	
-	//this method will perform after the bean initialization
-	@Override
-	public void afterPropertiesSet() throws Exception {
+	private void init() {
 		
-		System.out.println("The been is fully set and ready to ROCK!!!");
-		
+		System.out.println("The bean is ready to ROCK!");
 	}
-	
 	
 }

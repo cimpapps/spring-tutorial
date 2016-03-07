@@ -1,0 +1,21 @@
+package com.cimpapps.hello;
+
+import org.springframework.beans.factory.InitializingBean;
+
+public class HelloWorld {
+	String message;
+	
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	private void init() {
+		
+		System.out.println("The bean is ready to ROCK!");
+	}
+	
+}

@@ -12,7 +12,7 @@ public class Main {
 		HelloWorld singletonObj1 = (HelloWorld) context.getBean("helloWorld");
 		System.out.println(singletonObj1.getMessage());
 		
-		context.registerShutdownHook();
+		context.registerShutDownHook();
 	
 	}
 }
